@@ -5,9 +5,10 @@
 body {
   background-image: url("../img/Bull_Mountain,_Henry_Mountains,_Utah.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: cadetblue;
+  background-position: center center;
+  background-size: cover;
   background-attachment: fixed;
+  background-color: cadetblue;
 }
 h1 {
   display: flex;
