@@ -72,6 +72,7 @@ document.body.style.backgroundImage =
 document.body.style.backgroundRepeat = "no-repeat";
 document.body.style.backgroundSize = "cover";
 document.body.style.backgroundAttachment = "fixed";
+document.body.style.backgroundPosition = "center center";
 
 // style the H1 element
 const h1 = document.querySelector("h1");
