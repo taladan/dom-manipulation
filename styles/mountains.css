@@ -1,43 +1,45 @@
-/* * {
-  outline: 2px solid blue;
-} */
+/*
+Note: This css file is only here for reference.  All styling on index.html is handled
+by javascript
+*/
 
 body {
-  background-image: url("../img/Bull_Mountain,_Henry_Mountains,_Utah.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: cadetblue;
+  /* background-image: url("../img/Bull_Mountain,_Henry_Mountains,_Utah.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
+  /* background-size: cover; */
+  /* background-attachment: fixed;
+  background-color: cadetblue; */
 }
+
 h1 {
-  display: flex;
-  justify-content: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 3rem;
-  color: #800020;
-  text-shadow: #856346 0.2rem 0.4rem 0.06rem;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  /* font-size: 3rem; */
+  /* color: #800020; */
+  /* text-shadow: #856346 0.2rem 0.4rem 0.06rem; */
 }
 #mountains {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 #mountainTable {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: coral;
   border-radius: 1rem;
-  box-shadow: 0.3rem 0.3rem 0.06rem rgba(88, 66, 46, 0.45);
+  box-shadow: 0.3rem 0.3rem 0.06rem rgba(88, 66, 46, 0.45); */
 }
 
 #mountainTableHeader {
-  font-size: 1.25rem;
-  color: #372528;
+  /* font-size: 1.25rem;
+  color: #372528; */
 }
 
 td {
-  font-size: 1rem;
+  /* font-size: 1rem;
   color: aqua;
   text-shadow: 0.4rem 0.3rem 0.2rem #6d401f;
   margin: 2rem;
-  padding: 1.25rem;
+  padding: 1.25rem; */
 }

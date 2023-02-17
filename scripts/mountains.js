@@ -56,6 +56,7 @@ function generateTable(table, data) {
   }
 }
 
+// create the html
 const mountainDiv = document.querySelector("#mountains");
 const table = document.createElement("table");
 table.setAttribute("id", "mountainTable");
@@ -63,3 +64,47 @@ mountainDiv.append(table);
 const mountTable = document.getElementById("mountainTable");
 generateTableHead(mountTable, mountTableKeys);
 generateTable(table, MOUNTAINS);
+
+// style the body
+document.body.style.backgroundImage =
+  "url('../img/Bull_Mountain,_Henry_Mountains,_Utah.jpg')";
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundSize = "cover";
+document.body.style.backgroundAttachment = "fixed";
+document.body.style.backgroundColor = "cadetblue";
+
+// style the H1 element
+const h1 = document.querySelector("h1");
+h1.style.display = "flex";
+h1.style.justifyContent = "center";
+h1.style.fontFamily = "Georgia, 'Times New Roman', Times, serif";
+h1.style.fontSize = "3rem";
+h1.style.color = "#800020";
+h1.style.textShadow = "#856346 0.2rem 0.4rem 0.06rem";
+
+// style the div container '#mountains'
+mountainDiv.style.display = "flex";
+mountainDiv.style.justifyContent = "center";
+
+// style the mountain Table
+mountainTable.style.fontFamily =
+  '"Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif';
+mountainTable.style.backgroundColor = "coral";
+mountainTable.style.borderRadius = "1rem";
+mountainTable.style.boxShadow = "0.3rem 0.3rem 0.06rem rgba(88, 66, 46, 0.45)";
+
+// style mountain table header
+const mountainTableHeader = document.getElementById("mountainTableHeader");
+mountainTableHeader.style.fontSize = "1.25rem";
+mountainTableHeader.style.color = "#372528";
+
+// style table data
+const tableData = document.getElementsByTagName("td");
+
+for (let icell = 0; icell < tableData.length; icell++) {
+  tableData[icell].style.fontSize = "1rem";
+  tableData[icell].style.color = "aqua";
+  tableData[icell].style.textShadow = "0.4rem 0.3rem 0.2rem #6d401f";
+  tableData[icell].style.margin = "2rem";
+  tableData[icell].style.padding = "1.25rem";
+}
