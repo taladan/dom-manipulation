@@ -14,7 +14,7 @@ h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 3rem;
   color: #800020;
-  text-shadow: #856346 0.2rem 0.2rem 0.06rem;
+  text-shadow: #856346 0.2rem 0.4rem 0.06rem;
 }
 #mountains {
   display: flex;
@@ -24,7 +24,7 @@ h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: coral;
   border-radius: 1rem;
-  box-shadow: 0.3rem 0.3rem 0.06rem rgba(133, 99, 70, 0.45);
+  box-shadow: 0.3rem 0.3rem 0.06rem rgba(88, 66, 46, 0.45);
 }
 
 #mountainTableHeader {
@@ -35,7 +35,7 @@ h1 {
 td {
   font-size: 1rem;
   color: aqua;
-  text-shadow: 0.3rem 0.3rem 0.3rem #a25f2f;
+  text-shadow: 0.4rem 0.3rem 0.2rem #6d401f;
   margin: 2rem;
   padding: 1.25rem;
 }
