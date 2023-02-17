@@ -66,7 +66,7 @@ generateTableHead(mountTable, mountTableKeys);
 generateTable(table, MOUNTAINS);
 
 // style the body
-document.body.style.backgroundColor = "cadetblue";
+// document.body.style.backgroundColor = "cadetblue";
 document.body.style.backgroundImage =
   "url('../img/Bull_Mountain,_Henry_Mountains,_Utah.jpg')";
 document.body.style.backgroundRepeat = "no-repeat";
