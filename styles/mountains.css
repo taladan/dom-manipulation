@@ -1,0 +1,41 @@
+/* * {
+  outline: 2px solid blue;
+} */
+
+body {
+  background-image: url("../img/Bull_Mountain,_Henry_Mountains,_Utah.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: cadetblue;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3rem;
+  color: #800020;
+  text-shadow: #856346 0.2rem 0.2rem 0.06rem;
+}
+#mountains {
+  display: flex;
+  justify-content: center;
+}
+#mountainTable {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: coral;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.06rem rgba(133, 99, 70, 0.45);
+}
+
+#mountainTableHeader {
+  font-size: 1.25rem;
+  color: #372528;
+}
+
+td {
+  font-size: 1rem;
+  color: aqua;
+  text-shadow: 0.3rem 0.3rem 0.3rem #a25f2f;
+  margin: 2rem;
+  padding: 1.25rem;
+}
