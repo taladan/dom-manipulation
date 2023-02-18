@@ -1,11 +1,11 @@
 html {
-  cursor: url("/img/cursor.png"), pointer;
+  cursor: url("./img/cursor.png"), pointer;
 }
 body {
   background-color: beige;
 }
 
 .trail {
-  content: url("/img/cursor.png");
+  content: url("./img/cursor.png");
   position: absolute;
 }
