@@ -1,18 +1,34 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
   background-color: bisque;
   display: flex;
-  min-height: 95vh;
+  height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  padding-bottom: 300px;
 }
 
+#container {
+  min-height: 100%;
+  position: relative;
+}
 #balloon {
   font-size: 16px;
   margin: 25%;
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
   margin-top: auto;
   flex-shrink: 0;
 }
