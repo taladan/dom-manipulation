@@ -2,7 +2,8 @@
 const queryNode = document.querySelector("#ask");
 queryNode.textContent = "Would you like to play a game?";
 const warnNode = document.querySelector("#warning");
-
+const instructions = document.querySelector("#instruct");
+instructions.textContent = "Use your Up and Down arrows to play...";
 let balloon = document.querySelector("#balloon");
 let maxSize = getRndInt(100, 275);
 let currentSize = window
@@ -66,6 +67,7 @@ function calculateBalloonSize(event) {
     warnNode.textContent = "YOU *POPPED* IT!  Hit refresh to play again!";
     warnNode.setAttribute("class", "end");
     queryNode.textContent = "";
+    instructions.textContent = "";
     gameName = document.querySelector("#gameName");
     gameName.style.color = "aqua";
   } else {

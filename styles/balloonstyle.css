@@ -56,3 +56,8 @@ h1 {
   text-shadow: 0.1em 0.1em 0.4em gray;
   font-size: 4rem;
 }
+
+#instruct {
+  font-size: 0.75rem;
+  color: rgb(160, 88, 0);
+}
