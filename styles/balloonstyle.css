@@ -22,23 +22,37 @@ h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: large;
 }
-.start {
-  flex-wrap: wrap;
-  color: blue;
-  font-size: 1rem;
-}
 
-.quarter {
+.green {
+  display: flex;
+  justify-content: center;
+
   color: green;
+  text-shadow: 0.1em 0.1em 0.4em gray;
   font-size: 1.25rem;
 }
 
-.half {
-  color: yellow;
+.yellow {
+  display: flex;
+  justify-content: center;
+  color: rgb(139, 139, 22);
+  text-shadow: 0.1em 0.1em 0.4em gray;
   font-size: 1.5rem;
 }
 
-.threeQuarter {
-  color: red;
+.red {
+  display: flex;
+  justify-content: center;
+  color: rgb(109, 6, 6);
+  text-shadow: 0.1em 0.1em 0.4em black;
   font-size: 2rem;
+}
+
+.end {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: yellow;
+  text-shadow: 0.1em 0.1em 0.4em gray;
+  font-size: 4rem;
 }

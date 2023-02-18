@@ -1,9 +1,15 @@
+// Populate containers
+const queryNode = document.querySelector("#ask");
+queryNode.textContent = "Would you like to play a game?";
+const warnNode = document.querySelector("#warning");
+
 let balloon = document.querySelector("#balloon");
 let maxSize = getRndInt(100, 275);
 let currentSize = window
   .getComputedStyle(balloon, null)
   .getPropertyValue("font-size");
 
+// listen for arrow keys
 window.addEventListener("keydown", calculateBalloonSize);
 
 function getRndInt(min, max) {
@@ -20,21 +26,27 @@ function popWarning(currentSize, maxSize) {
 
   if (currentSize > quarterSize && currentSize < halfSize) {
     //change the background color
+    document.body.style.backgroundColor = "darkseagreen";
+    warnNode.textContent = "You're doing great!  Just don't *POP* the balloon!";
+    warnNode.setAttribute("class", "green");
   } else if (
     currentSize > quarterSize &&
-    currentSize > halfsize &&
+    currentSize > halfSize &&
     currentSize < threeQuarterSize
   ) {
     //change the background color again and add a warning
     //
+    document.body.style.backgroundColor = "#FDFD96";
+    warnNode.textContent =
+      "Whoa!  That's a lot of air in the balloon...Be careful you don't *POP* it!";
+    warnNode.setAttribute("class", "yellow");
   } else if (currentSize > threeQuarterSize && currentSize < maxSize) {
     //change the background color a third time and add a more
     // serious warning
     //
-  } else if (currentSize > maxSize) {
-    // change the emoji, change the background color and
-    // change the text of the warning to a fail message
-    //
+    document.body.style.backgroundColor = "#ff6961";
+    warnNode.textContent = "WHOA!  That balloon is bound to *POP* any second!";
+    warnNode.setAttribute("class", "red");
   }
 }
 
@@ -50,7 +62,13 @@ function calculateBalloonSize(event) {
     console.log(maxSize);
     balloon.textContent = "💥";
     window.removeEventListener("keydown", calculateBalloonSize);
+    document.body.style.backgroundColor = "#570a16";
+    warnNode.textContent = "YOU *POPPED* IT!  Hit refresh to play again!";
+    warnNode.setAttribute("class", "end");
+    queryNode.textContent = "";
+    gameName = document.querySelector("#gameName");
+    gameName.style.color = "aqua";
+  } else {
+    popWarning(currentSize, maxSize);
   }
 }
-const queryNode = document.querySelector("#ask");
-queryNode.textContent = "Would you like to play a game?";
