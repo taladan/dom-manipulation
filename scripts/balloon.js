@@ -64,9 +64,10 @@ function calculateBalloonSize(event) {
     balloon.textContent = "💥";
     window.removeEventListener("keydown", calculateBalloonSize);
     document.body.style.backgroundColor = "#570a16";
-    warnNode.textContent = "YOU *POPPED* IT!  Hit refresh to play again!";
+    warnNode.textContent = "YOU *POPPED* IT!";
     warnNode.setAttribute("class", "end");
-    queryNode.textContent = "";
+    queryNode.textContent = "Hit refresh to play again";
+    queryNode.style.color = "yellow";
     instructions.textContent = "";
     gameName = document.querySelector("#gameName");
     gameName.style.color = "aqua";

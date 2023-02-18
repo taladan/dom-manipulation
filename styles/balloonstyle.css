@@ -1,15 +1,21 @@
 body {
   background-color: bisque;
   display: flex;
+  min-height: 95vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-p > #balloon {
+#balloon {
   font-size: 16px;
+  margin: 25%;
 }
 
+footer {
+  margin-top: auto;
+  flex-shrink: 0;
+}
 h1 {
   display: flex;
   flex-direction: column;
