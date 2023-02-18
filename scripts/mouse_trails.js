@@ -4,4 +4,7 @@ window.addEventListener("mousemove", (event) => {
   trailer.style.left = event.pageX - 12 + "px";
   trailer.style.top = event.pageY - 12 + "px";
   document.body.appendChild(trailer);
+  setTimeout(() => {
+    document.body.removeChild(trailer);
+  }, 100);
 });
