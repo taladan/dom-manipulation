@@ -1,0 +1,44 @@
+body {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p > #balloon {
+  font-size: 16px;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#ask {
+  color: darkslateblue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: large;
+}
+.start {
+  flex-wrap: wrap;
+  color: blue;
+  font-size: 1rem;
+}
+
+.quarter {
+  color: green;
+  font-size: 1.25rem;
+}
+
+.half {
+  color: yellow;
+  font-size: 1.5rem;
+}
+
+.threeQuarter {
+  color: red;
+  font-size: 2rem;
+}
