@@ -19,8 +19,6 @@ function asTabs(node) {
   const tabs = document.querySelectorAll("data-tabname");
   const body = document.querySelector("body");
 
-  // const tabsArray = [];
-
   for (const child of node.children) {
     text = child.textContent;
     child.style.display = "none";
@@ -49,20 +47,16 @@ function changeContent(e) {
       Array.from(btnsAsSet).filter((x) => !targetBtnSet.has(x))
     );
 
-    console.log(hiddenBtns);
     if (btn.classList[1] == clickedClass) {
       div.style.display = "block";
-    } else {
       for (const hiddenBtn of hiddenBtns) {
-        // const hideDiv = document.querySelector("")
-        console.log(hiddenBtn.classList);
-        div.style.display = "none";
+        hideDiv = document.querySelector(
+          "[data-tabname =" + `${hiddenBtn.classList[1]}`
+        );
+        hideDiv.style.display = "none";
       }
     }
   }
 }
 const panel = document.querySelector("tab-panel");
 asTabs(document.querySelector("tab-panel"));
-// tabsArray.forEach(tab) => ){
-//   tab.addEventListener()
-// }
