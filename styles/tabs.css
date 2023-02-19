@@ -1,3 +1,12 @@
+/* CSS HEX */
+:root {
+  --sage: #b8b878ff;
+  --eerie-black: #222222ff;
+  --rose-quartz: #bca3acff;
+  --cerulean: #437c90ff;
+  --pale-azure: #69ddffff;
+}
+
 html,
 body {
   height: 100%;
@@ -7,13 +16,22 @@ body {
 
 body {
   display: flex;
+  background-color: var(--eerie-black);
 }
+
 tab-panel {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  background-color: var(--sage);
+  min-width: 90%;
+  min-height: 90%;
   position: absolute;
-  left: 10%;
-  top: 100px;
+  left: 0px;
+  top: 60px;
+  border-top-right-radius: 20px;
+  border-end-end-radius: 20px;
 }
 
 .btn {
@@ -31,5 +49,7 @@ tab-panel {
   border: 1px solid transparent;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
-  background-color: rgb(184, 184, 120);
+  background-color: var(--sage);
+  border-left: solid 1px var(--eerie-black);
+  border-right: solid 1px var(--eerie-black);
 }
