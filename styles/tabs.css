@@ -11,6 +11,9 @@ body {
 tab-panel {
   display: flex;
   justify-content: flex-start;
+  position: absolute;
+  left: 10%;
+  top: 100px;
 }
 
 .btn {
